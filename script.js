@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Tambah caption ke foto jika belum ada
     photoFrames.forEach((frame, index) => {
         if (!frame.querySelector('.photo-caption')) {
-            const captions = ['2 jari? pendukung prabowo kah?', 'kepompong bandung', 'hulk girl', 'patung museum kok gerak jir', 'bao an kepedean'];
+            const captions = ['2 jari? pendukung prabowo kah?', 'kepompong', 'hulk girl', 'patung museum kok gerak jir', 'nyengir mulu kek kuda'];
             const caption = document.createElement('div');
             caption.className = 'photo-caption';
             caption.textContent = captions[index] || 'Foto ' + (index + 1);
@@ -425,4 +425,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     console.log('JavaScript initialized successfully!');
+
 });
